@@ -77,7 +77,7 @@ class AnimeCard extends StatelessWidget {
     return Text(
       anime.genre,
       style: const TextStyle(
-        color: Colors.deepPurple,
+        color: Color.fromARGB(255, 183, 58, 58),
         fontSize: 13,
       ),
     );

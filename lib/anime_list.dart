@@ -1,5 +1,5 @@
-import 'package:anime_catalog/anime_card.dart';
-import 'package:anime_catalog/models/anime_data.dart';
+import 'package:rock/anime_card.dart';
+import 'package:rock/models/anime_data.dart';
 import 'package:flutter/material.dart';
 
 class AnimeList extends StatelessWidget {

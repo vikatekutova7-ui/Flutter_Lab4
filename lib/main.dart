@@ -1,24 +1,40 @@
-import 'package:anime_catalog/anime_list.dart';
+import 'package:rock/anime_list.dart';
 import 'package:flutter/material.dart';
-import 'package:anime_catalog/models/anime_data.dart';
+import 'package:rock/models/anime_data.dart';
+
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: const Color.fromARGB(
+            255,
+            107,
+            1,
+            1,
+          ),
         ),
       ),
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Аниме-каталог 🎌',
-            style: TextStyle(fontWeight: FontWeight.bold),
+            'Крутейшие рок-группы',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: const Color.fromARGB(
+            255,
+            150,
+            9,
+            9,
+          ),
           foregroundColor: Colors.white,
-          actions: [Text('${animeList.length}'), const SizedBox(width: 15,)],
+          actions: [
+            Text('${animeList.length}'),
+            const SizedBox(width: 15),
+          ],
         ),
         body: AnimeList(),
       ),
